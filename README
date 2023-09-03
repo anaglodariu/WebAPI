@@ -1,2 +1,10 @@
 -> in fisierul virus_total.d -> pentru a realiza conexiunea dintre "user interface" si "backend" implementat pentru tema1, apelez functiile din fisierul db_conn.d. Valoarea returnata de functii o pastrez intr-o variabla ("ret") si in functie de valoarea acesteia arunc o exceptie sau returnez un obiect de tip json.
 -> in fisierul db_conn.d completez cu partea de hashuit a parolei -> in functia "authUser": iau parola din database si o salvez in "dbpass" ; obtin salt-ul parolei hashuite ; hasuiesc parola data ca argument in functie cu saltul obtinut ; verific daca cele 2 parole hashuite coincid.
+
+Now that our database is up and runnnig, we need to create the code that connects the user facing interface with the backend. 
+This means that we need to have a server running that accepts requests from the user interface, it forwards them to the backend and then delivers back a response. 
+Most of the time, the middleware extracts the user input and creates the appropriate query that is passed to the backend. 
+However, there are situations where some actions need to be taken on the middleware side.
+
+Skeleton: https://github.com/Dlang-UPB/PCLP4/tree/master/Project/m2
+Setup: https://dlang-upb.github.io/PCLP4/project/milestone-2.html
